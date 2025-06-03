@@ -4,7 +4,7 @@ import seaborn as sns
 from scipy import stats
 import os
 
-def analyze_csv(file_path, report_format='txt'):
+def analyze_csv(file_path: str, report_format='txt'):
     """
     Analisa um arquivo CSV e gera um relatório com estatísticas e gráficos
     """
@@ -34,7 +34,7 @@ def analyze_csv(file_path, report_format='txt'):
 
     print(f"\nAnálise concluída com sucesso. Os resultados foram salvos na pasta '{output_dir}'.")
 
-def generate_report_content(df):
+def generate_report_content(df: pd.DataFrame):
     """Gera o conteúdo do relatório com análises estatísticas"""
     
     report = []
@@ -75,7 +75,7 @@ def generate_report_content(df):
 
     return "\n".join(report)
 
-def generate_plots(df, output_dir):
+def generate_plots(df: pd.DataFrame, output_dir: str):
     """Gera visualizações dos dados"""
     sns.set(style="whitegrid")
 
@@ -100,7 +100,7 @@ def generate_plots(df, output_dir):
         plt.title('Matriz de Correlação')
         plt.savefig(f"{output_dir}/correlation_matrix.png", bbox_inches='tight')
 
-def save_report(content, output_dir, format='txt'):
+def save_report(content: str, output_dir: str, format='txt'):
     """Salva o relatório no formato especificado"""
     
     if format == 'html':
