@@ -1,10 +1,11 @@
-# CSV Analyzer
+# 📈 CSV Analyzer
 
-Um script em Python para analisar arquivos CSV de forma rápida. Ele gera um relatório com estatísticas básicas, gráficos e uma matriz de correlação (se aplicável).
+A Python script to quickly analyze CSV files. It generates a report with basic statistics, charts, and a correlation matrix (if applicable).
 
-## Funcionalidades
+## 🔍 Features
 
-- Leitura de arquivos CSV
-- Estatísticas por coluna (média, mediana, moda, nulos, etc.)
-- Gráficos de distribuição e contagem
-- Relatório em formato `.txt` ou `.html`
+- Reads CSV files  
+- Column statistics (mean, median, mode, nulls, etc.)  
+- Distribution and count plots  
+- Report generation in `.txt` or `.html` format
+
